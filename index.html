@@ -5,30 +5,51 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="icon" href="/images/Logo.png" type="image/png">
+<link rel="icon" href="./images/Logo.png" type="image/png">
 <style>
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-  background-image: url('/images/background.jpg');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-}
+  body {
+    font-family: "Raleway", sans-serif
+  }
+  body,h1 {font-family: "Raleway", sans-serif}
+  body, html {height: 100%}
+  body {
+    background-color: rgb(0, 90, 160);
+    background-image: linear-gradient(white 2px, transparent 2px),
+    linear-gradient(90deg, white 2px, transparent 2px),
+    linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
+    min-height: 100%;
+  }
+  .title {
+    padding-top:50px
+  }
+  .link {
+    text-decoration: none;
+  }
 </style>
 <body>
-
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    <image src="/images/Logo.png" width="100" height="100">
+    <!--List Projects-->
+    <div class="w3-text-white w3-center w3-animate-bottom w3-display-middle">
+      <ul class="w3-ul">
+        <li class="w3-bar">
+          <a href="https://github.com/helsby-studios/perros" class="w3-bar-item w3-button w3-xlarge w3-hover-blue w3-animate-bottom">PerrOS</a>
+          <a href="https://github.com/helsby-studios/perros-cogs" class="w3-bar-item w3-button w3-xlarge w3-hover-blue w3-animate-bottom">PerrOS Cogs</a>
+          <a href="https://github.com/GameTec-live/blender_savewithgit" class="w3-bar-item w3-button w3-xlarge w3-hover-blue w3-animate-bottom">Save with GIT</a>
+          <a href="https://github.com/GameTec-live/ditterkiller" class="w3-bar-item w3-button w3-xlarge w3-hover-blue w3-animate-bottom">Ditterkiller</a>
+          <a href="https://github.com/GameTec-live" class="w3-bar-item w3-button w3-xlarge w3-hover-blue w3-animate-bottom">More...</a>
+        </li>
+      </ul>
+    </div>
+  <!--Title-->
+  <div class="w3-center w3-text-white">
+    <h1 class="title w3-jumbo w3-animate-top">My Projects:</h1>
   </div>
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">GameTec_live</p>
+  <!--Footer-->
+  <div class="w3-display-bottommiddle w3-text-white">
+    <p class="w3-large w3-center w3-animate-bottom">GameTec_live</p>
+    <a class="w3-large w3-center w3-animate-bottom link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">GPL V3 Licensed</a>
   </div>
-
-</div>
-
 </body>
 </html>
