@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        #advent-calendar .day img {
+          display: none;
+        }
+        #advent-calendar .day img.door {
+          display: block;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            background-color: #e5f321;
+            padding: 10px;
+        }
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+        img {
+            width: 25rem;
+            height: 25rem;
+        }
+    </style>
+</head>
+<body>
+<div id="advent-calendar" class="grid-container">
+    <div class="day">
+        <img id="day1door" class="door grid-item" src="../images/christmas/800x600/bigpicture/1-with-text.png" />
+        <img id="day1" class="grid-item" src="../images/christmas/800x600/christmas1.png" style="display: none;" />
+    </div>
+    <div class="day">
+        <img id="day2door" class="door grid-item" src="../images/christmas/800x600/bigpicture/2-with-text.png" />
+        <img id="day2" class="grid-item" src="../images/christmas/800x600/christmas2.png" style="display: none;" />
+    </div>
+    <div class="day">
+        <img id="day3door" class="door grid-item" src="../images/christmas/800x600/bigpicture/3-with-text.png" />
+        <img id="day3" class="grid-item" src="../images/christmas/800x600/christmas3.png" style="display: none;" />
+    </div>
+    <div class="day">
+        <img id="day4door" class="door grid-item" src="../images/christmas/800x600/bigpicture/4-with-text.png" />
+        <img id="day4" class="grid-item" src="../images/christmas/800x600/christmas4.png" style="display: none;" />
+    </div>
+    <div class="day">
+        <img id="day5door" class="door grid-item" src="../images/christmas/800x600/bigpicture/5-with-text.png" />
+        <img id="day5" class="grid-item" src="../images/christmas/800x600/christmas5.png" style="display: none;" />
+    </div>
+    <div class="day">
+        <img id="day6door" class="door grid-item" src="../images/christmas/800x600/bigpicture/6-with-text.png" />
+        <img id="day6" class="grid-item" src="../images/christmas/800x600/christmas6.png" style="display: none;" />
+    </div>
+    <div class="day">
+        <img id="day7door" class="door grid-item" src="../images/christmas/800x600/bigpicture/7-with-text.png" />
+        <img id="day7" class="grid-item" src="../images/christmas/800x600/christmas7.png" style="display: none;" />
+    </div>
+    <div class="day">
+        <img id="day8door" class="door grid-item" src="../images/christmas/800x600/bigpicture/8-with-text.png" />
+        <img id="day8" class="grid-item" src="../images/christmas/800x600/christmas8.png" style="display: none;" />
+    </div>
+    <div class="day">
+        <img id="day9door" class="door grid-item" src="../images/christmas/800x600/bigpicture/9-with-text.png" />
+        <img id="day9" class="grid-item" src="../images/christmas/800x600/christmas9.png" style="display: none;" />
+    </div>
+    <div class="day">
+        <img id="day10door" class="door grid-item" src="../images/christmas/800x600/bigpicture/10-with-text.png" />
+        <img id="day10" class="grid-item" src="../images/christmas/800x600/christmas10.png" style="display: none;" />
+    </div>
+    <div class="day">
+        <img id="day11door" class="door grid-item" src="../images/christmas/800x600/bigpicture/11-with-text.png" />
+        <img id="day11" class="grid-item" src="../images/christmas/800x600/christmas11.png" style="display: none;" />
+    </div>
+    <div class="day">
+        <img id="day12door" class="door grid-item" src="../images/christmas/800x600/bigpicture/12-with-text.png" />
+        <img id="day12" class="grid-item" src="../images/christmas/800x600/christmas12.png" style="display: none;" />
+    </div>
+    <div class="day">
+        <img id="day13door" class="door grid-item" src="../images/christmas/800x600/bigpicture/13-with-text.png" />
+        <img id="day13" class="grid-item" src="../images/christmas/800x600/christmas13.png" style="display: none;" />
+    </div>
+    <div class="day">
+        <img id="day14door" class="door grid-item" src="../images/christmas/800x600/bigpicture/14-with-text.png" />
+        <img id="day14" class="grid-item" src="../images/christmas/800x600/christmas14.png" style="display: none;" />
+    </div>
+    <div class="day">
+        <img id="day15door" class="door grid-item" src="../images/christmas/800x600/bigpicture/15-with-text.png" />
+        <img id="day15" class="grid-item" src="../images/christmas/800x600/christmas15.png" style="display: none;" />
+    </div>
+    <div class="day">
+        <img id="day16door" class="door grid-item" src="../images/christmas/800x600/bigpicture/16-with-text.png" />
+        <img id="day16" class="grid-item" src="../images/christmas/800x600/christmas16.png" style="display: none;" />
+    </div>
+    <div class="day">
+        <img id="day17door" class="door grid-item" src="../images/christmas/800x600/bigpicture/17-with-text.png" />
+        <img id="day17" class="grid-item" src="../images/christmas/800x600/christmas17.png" style="display: none;" />
+    </div>
+    <div class="day">
+        <img id="day18door" class="door grid-item" src="../images/christmas/800x600/bigpicture/18-with-text.png" />
+        <img id="day18" class="grid-item" src="../images/christmas/800x600/christmas18.png" style="display: none;" />
+    </div>
+    <div class="day">
+        <img id="day19door" class="door grid-item" src="../images/christmas/800x600/bigpicture/19-with-text.png" />
+        <img id="day19" class="grid-item" src="../images/christmas/800x600/christmas19.png" style="display: none;" />
+    </div>
+    <div class="day">
+        <img id="day20door" class="door grid-item" src="../images/christmas/800x600/bigpicture/20-with-text.png" />
+        <img id="day20" class="grid-item" src="../images/christmas/800x600/christmas20.png" style="display: none;" />
+    </div>
+    <div class="day">
+        <img id="day21door" class="door grid-item" src="../images/christmas/800x600/bigpicture/21-with-text.png" />
+        <img id="day21" class="grid-item" src="../images/christmas/800x600/christmas21.png" style="display: none;" />
+    </div>
+    <div class="day">
+        <img id="day22door" class="door grid-item" src="../images/christmas/800x600/bigpicture/22-with-text.png" />
+        <img id="day22" class="grid-item" src="../images/christmas/800x600/christmas22.png" style="display: none;" />
+    </div>
+    <div class="day">
+        <img id="day23door" class="door grid-item" src="../images/christmas/800x600/bigpicture/23-with-text.png" />
+        <img id="day23" class="grid-item" src="../images/christmas/800x600/christmas23.png" style="display: none;" />
+    </div>
+    <div class="day">
+        <img id="day24door" class="door grid-item" src="../images/christmas/800x600/bigpicture/24-with-text.png" />
+        <img id="day24" class="grid-item" src="../images/christmas/800x600/christmas24.png" style="display: none;" />
+    </div>
+</div>
+<script>
+  var currentDay = new Date().getDate();
+  $("[id^='day']").click(function() {
+    var dayNumber = this.id.replace("day", "").replace("door", "");
+    if (dayNumber <= currentDay) {
+      $("#day" + dayNumber + "door").hide();//fadeOut();
+      $("#day" + dayNumber).show();//fadeIn();
+    }
+  });
+</script>
+</body>
+</html>
