@@ -1,2 +1,3 @@
 # gametec.org
-official website of GameTec_live
+My website.
+Built with tailwindcss
